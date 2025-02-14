@@ -12,9 +12,9 @@ function App() {
 
   return (
     <div className="w-full">
-      <>
+      {/* <>
         <SplashScreen />
-      </>
+      </> */}
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
