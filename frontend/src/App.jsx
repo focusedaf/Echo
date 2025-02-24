@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import Profile from "./Pages/Profile";
 import About from "./Pages/About";
 import ProgressTracker from "./Pages/ProgressTracker";
+import Predict from "./Pages/Predict";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -19,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/tracker" element={<ProgressTracker />}></Route>
+        <Route path="/predict" element={<Predict />}></Route>
         <Route path="/profile" element={<Profile />}></Route>
       </Routes>
     </div>

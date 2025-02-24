@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="bg-red-600 w-screen min-h-screen absolute top-0 left-0">
       <Navbar />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
