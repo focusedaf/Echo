@@ -7,15 +7,18 @@ import Profile from "./Pages/Profile";
 import About from "./Pages/About";
 import ProgressTracker from "./Pages/ProgressTracker";
 import Predict from "./Pages/Predict";
-
+import {BottomNavbar} from "./Components/index";
 function App() {
   const [count, setCount] = useState(0);
+  // const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   return (
     <div className="w-full">
       {/* <>
         <SplashScreen />
       </> */}
+      {/* {!isLoggedIn && <Navbar/>} */}
+      {/* {isLoggedIn && <BottomNavbar/>} */}
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
