@@ -11,7 +11,8 @@ const userSchema = new Schema(
       index: true,
     },
     avatar: {
-      type: String,
+      public_id: String,
+      url: String,
     },
     password: {
       type: String,
