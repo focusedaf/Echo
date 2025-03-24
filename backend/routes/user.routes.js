@@ -1,8 +1,8 @@
 import { Router } from "express";
 
-const router = Router();
+const userRouter = Router();
 
-router.route("/signup");
-router.route("./login");
+userRouter.route("/signup");
+userRouter.route("/login");
 
-export default router;
+export default userRouter;
