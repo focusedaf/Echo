@@ -9,7 +9,7 @@ const studyMaterialSchema = new Schema(
     },
     title: {
       type: String,
-      required: true,
+    //   required:true,
       lowercase: true,
       trim: true,
     },

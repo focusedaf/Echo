@@ -5,7 +5,7 @@ try {
     
 } catch (error) {
     console.error("Unable to track progress");
-    return req.status(500); 
+    return res.status(500); 
 }
 }
 
