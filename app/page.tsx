@@ -11,6 +11,8 @@ import {
   NavbarButton,
   NavbarLogo,
 } from "@/components/ui/navbar";
+import { Hexagon, Github, Twitter } from "lucide-react";
+import { Footer } from "@/components/ui/footer";
 import React, { useState } from "react";
 
 export default function Home() {
@@ -74,6 +76,39 @@ export default function Home() {
 
       <div className="flex items-center justify-center h-screen">
         <h3 className="text-center items-center">hello</h3>
+      </div>
+
+      <div className="w-full ">
+        <Footer
+          logo={<Hexagon className="h-10 w-10" />}
+          brandName="Echo"
+          socialLinks={[
+            {
+              icon: <Twitter className="h-5 w-5" />,
+              href: "https://twitter.com",
+              label: "Twitter",
+            },
+            {
+              icon: <Github className="h-5 w-5" />,
+              href: "https://github.com",
+              label: "GitHub",
+            },
+          ]}
+          mainLinks={[
+            { href: "/products", label: "Products" },
+            { href: "/about", label: "About" },
+            { href: "/blog", label: "Blog" },
+            { href: "/contact", label: "Contact" },
+          ]}
+          legalLinks={[
+            { href: "/privacy", label: "Privacy" },
+            { href: "/terms", label: "Terms" },
+          ]}
+          copyright={{
+            text: "© 2025 Echo",
+            license: "All rights reserved",
+          }}
+        />
       </div>
     </div>
   );
